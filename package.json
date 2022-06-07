@@ -2,10 +2,14 @@
   "name": "rsd-website",
   "scripts": {
     "build": "rollup scripts/main.js --file build/bundle.js --sourcemap",
-    "styles": "sass styles/main.scss build/styles.css"
+    "styles": "sass styles/main.scss build/styles.css",
+    "html": "node packaging/build.js"
   },
+  "type": "module",
   "devDependencies": {
+    "nunjucks": "^3.2.3",
     "rollup": "^2.75.6",
-    "sass": "^1.52.2"
+    "sass": "^1.52.2",
+    "yaml": "^2.1.1"
   }
 }
