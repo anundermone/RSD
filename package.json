@@ -1,9 +1,11 @@
 {
   "name": "rsd-website",
   "scripts": {
-    "build": "rollup scripts/main.js --file build/bundle.js"
+    "build": "rollup scripts/main.js --file build/bundle.js",
+    "styles": "sass styles/main.scss build/styles.css"
   },
   "devDependencies": {
-    "rollup": "^2.75.6"
+    "rollup": "^2.75.6",
+    "sass": "^1.52.2"
   }
 }
