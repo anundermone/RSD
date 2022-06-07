@@ -1,4 +1,9 @@
 {
   "name": "rsd-website",
-  "scripts": {}
+  "scripts": {
+    "build": "rollup scripts/main.js --file build/bundle.js"
+  },
+  "devDependencies": {
+    "rollup": "^2.75.6"
+  }
 }
