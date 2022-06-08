@@ -1,22 +1,25 @@
+import fs from 'fs'
 import nunjucks from 'nunjucks'
 import YAML from 'yaml'
-import fs from 'fs'
-import path from 'path'
+
+const contentDir = 'content'
+const pagesDir = 'templates/pages'
+const buildDir = 'build'
 
 function renderHtml() {
-    const globalContent = loadYamlFile('content/global.yaml')
+    const globalContent = loadYamlFile(`${contentDir}/global.yaml`)
     const njk = nunjucks.configure({ throwOnUndefined: true })
 
     for (const page of getPageNames()) {
         const pageContent = loadYaml(page)
         const content = { page: pageContent, ...globalContent }
         const html = renderTemplate(njk, page, content)
-        fs.writeFileSync(`build/${page}.html`, html)
+        fs.writeFileSync(`${buildDir}/${page}.html`, html)
     }
 }
 
 function getPageNames() {
-    const templates = fs.readdirSync('pages').filter(isNjk)
+    const templates = fs.readdirSync(pagesDir).filter(isNjk)
     return templates.map(getPageName)
 }
 
@@ -25,12 +28,12 @@ function getPageName(template) {
 }
 
 function isNjk(file) {
-    const path = `pages/${file}`
+    const path = `${pagesDir}/${file}`
     return fs.lstatSync(path).isFile() && file.endsWith(".njk")
 }
 
 function loadYaml(page) {
-    const file = `content/${page}.yaml`
+    const file = `${contentDir}/${page}.yaml`
     return loadYamlFile(file)
 }
 
@@ -40,9 +43,8 @@ function loadYamlFile(file) {
 }
 
 function renderTemplate(njk, page, content) {
-    const file = `pages/${page}.njk`
+    const file = `${pagesDir}/${page}.njk`
     return njk.render(file, content)
 }
 
 renderHtml()
-
