@@ -1,0 +1,7 @@
+config:
+  stylesheet: styles.css
+  bundle: bundle.js
+
+meta:
+  siteDescription: ''
+  siteIcon: ''
