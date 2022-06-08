@@ -1,3 +1,4 @@
+import beautify from 'js-beautify'
 import fs from 'fs'
 import nunjucks from 'nunjucks'
 import YAML from 'yaml'
@@ -44,7 +45,8 @@ function loadYamlFile(file) {
 
 function renderTemplate(njk, page, content) {
     const file = `${pagesDir}/${page}.njk`
-    return njk.render(file, content)
+    const uglyHtml = njk.render(file, content)
+    return beautify.html(uglyHtml, { preserve_newlines: false, indent_size: 2 })
 }
 
 renderHtml()

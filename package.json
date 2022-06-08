@@ -7,6 +7,7 @@
   },
   "type": "module",
   "devDependencies": {
+    "js-beautify": "^1.14.3",
     "nunjucks": "^3.2.3",
     "rollup": "^2.75.6",
     "sass": "^1.52.2",
