@@ -6,10 +6,15 @@ rm -rf build
 mkdir build
 
 echo 'Linking assets...'
-for item in $(ls assets)
-do
-    ln -sf ../assets/$item build/$item
-done
+if [ "${CI:-}" == 'true' ]
+then
+    cp -a assets/. build
+else
+    for item in $(ls assets)
+    do
+        ln -sf ../assets/$item build/$item
+    done
+fi
 
 echo 'Compiling html templates...'
 node tools/build-html.js
