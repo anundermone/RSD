@@ -5,11 +5,12 @@ echo 'Overwriting build directory...'
 rm -rf build
 mkdir build
 
-echo 'Linking assets...'
 if [ "${CI:-}" == 'true' ]
 then
+    echo 'Copying assets...'
     cp -a assets/. build
 else
+    echo 'Linking assets...'
     for item in $(ls assets)
     do
         ln -sf ../assets/$item build/$item
