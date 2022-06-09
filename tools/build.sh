@@ -5,7 +5,7 @@ echo 'Overwriting build directory...'
 rm -rf build
 mkdir build
 
-if [ "${CI:-}" == 'true' ]
+if [ "${CI:-}" = 'true' ]
 then
     echo 'Copying assets...'
     cp -a assets/. build
