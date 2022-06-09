@@ -11,8 +11,6 @@ function renderHtml() {
     const globalContent = loadYamlFile(`${contentDir}/global.yaml`)
     const njk = nunjucks.configure({ throwOnUndefined: true })
 
-    fs.mkdirSync(buildDir, { recursive: true })
-
     for (const page of getPageNames()) {
         const pageContent = loadYaml(page)
         const content = { page: pageContent, ...globalContent }

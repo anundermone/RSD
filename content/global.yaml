@@ -1,6 +1,6 @@
 config:
-  stylesheet: styles.css
-  bundle: bundle.js
+  stylesheet: '/styles.css'
+  bundle: '/bundle.js'
 
 meta:
   siteDescription: ''

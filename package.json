@@ -1,10 +1,7 @@
 {
   "name": "rsd-website",
   "scripts": {
-    "build": "npm run build-html && npm run build-js && npm run build-sass",
-    "build-html": "node tools/build-html.js",
-    "build-js": "rollup scripts/main.js --file build/bundle.js --sourcemap",
-    "build-sass": "sass styles/main.scss build/styles.css",
+    "build": "./tools/build.sh",
     "start": "npm run build && node tools/start-dev-server.js"
   },
   "type": "module",
