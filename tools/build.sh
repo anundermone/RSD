@@ -1,5 +1,5 @@
 #/bin/sh
-set -euo pipefail
+set -eu
 
 echo 'Overwriting build directory...'
 rm -rf build
