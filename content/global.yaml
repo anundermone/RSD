@@ -5,3 +5,13 @@ config:
 meta:
   siteDescription: ''
   siteIcon: ''
+
+menu:
+  - page: 'Home'
+    href: '/'
+  - page: 'About Us'
+    href: '/about.html'
+  - page: 'Our Work'
+    href: '/portfolio.html'
+  - page: 'Contact Us'
+    href: '/contact.html'

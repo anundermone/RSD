@@ -1,0 +1,37 @@
+@mixin title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+@mixin section-heading {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+@mixin paragraph-large {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+@mixin paragraph {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+@mixin menu-item {
+    font-family: 'Arimo';
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+@mixin secondary-text {
+    font-family: 'Arimo';
+    font-weight: 700;
+    font-size: 1rem;
+}

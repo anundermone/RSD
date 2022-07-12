@@ -1,10 +1,10 @@
-@use 'shared' as *;
+@use '../util/colours' as *;
 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $grey;
+    background-color: $light-grey;
     padding-top: 32px;
     padding-bottom: 16px;
 

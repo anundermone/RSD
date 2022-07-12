@@ -1,16 +1,5 @@
-@use 'fonts';
-@use 'module';
-@use 'header';
+@use 'core/defaults';
+@use 'core/fonts';
 
-h1 {
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 3rem;
-}
+@use 'components/header';
+@use 'components/menu';

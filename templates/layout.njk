@@ -20,9 +20,18 @@
 
 <body>
   <header class="header">
-    <img src="/images/RSD-logo.png" alt="R.S.D." class="header__logo">
+    <a href="/">
+      <img src="/images/RSD-logo.png" alt="R.S.D." class="header__logo">
+    </a>
     <h1 class="header__company-name">Re-Style Decorators</h1>
   </header>
+  <menu class="menu">
+    {% for item in menu %}
+      <li>
+        <a href="{{ item.href }}">{{ item.page }}</a>
+      </li>
+    {% endfor %}
+  </menu>
   {% block body %}{% endblock %}
 </body>
 
