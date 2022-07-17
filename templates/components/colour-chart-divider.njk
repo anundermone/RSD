@@ -1,0 +1,7 @@
+{% macro colourChartDivider() %}
+  <div class="colour-chart-divider">
+    {% for i in range(6) %}
+      <div class="colour-chart-divider__block colour-chart-divider__block--{{ i }}"></div>
+    {% endfor %}
+  </div>
+{% endmacro %}
