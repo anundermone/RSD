@@ -1,0 +1,54 @@
+@use '../util/colours' as *;
+@use '../util/fonts' as *;
+@use '../util/screens' as *;
+
+.section {
+    @include mobile {
+
+    }
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+
+        &__inner {
+            margin: 0 54px;
+            width: 1366px;
+        }
+    }
+
+    h3 {
+        @include section-heading;
+    }
+
+    p {
+        @include paragraph;
+    }
+
+    &--white {
+        background-color: $white;
+
+        h3 {
+            color: $red;
+        }
+
+        p {
+            color: $navy;
+        }
+    }
+
+    &--red {
+        background-color: $red;
+        color: $white;
+    }
+
+    &--grey {
+        background-color: $dark-grey;
+        color: $navy;
+    }
+
+    &--navy {
+        background-color: $navy;
+        color: $white;
+    }
+}

@@ -10,7 +10,10 @@
 @mixin section-heading {
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 3rem;
+    font-size: px-to-rem(40);
+    line-height: px-to-rem(60);
+    margin-block-start: 1em;
+    margin-block-end: 0.5em;
 }
 
 @mixin paragraph-large {
@@ -23,7 +26,10 @@
 @mixin paragraph {
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: px-to-rem(20);
+    line-height: px-to-rem(30);
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 @mixin menu-item {

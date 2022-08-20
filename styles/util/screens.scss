@@ -1,0 +1,16 @@
+@use './units' as *;
+
+$mobile-max: px-to-em(768);
+$desktop-min: px-to-em(769);
+
+@mixin mobile {
+    @media (max-width: $mobile-max) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-min) {
+        @content;
+    }
+}

@@ -3,3 +3,5 @@ banner:
   src: '/images/homepage-banner.jpeg'
   alt: 'Spencer Stuart office fit-out'
 slogan: 'Trusted for the perfect finish since 1991'
+services:
+  title: 'Our Services'
