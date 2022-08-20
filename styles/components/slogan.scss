@@ -1,0 +1,17 @@
+@use '../util/colours' as *;
+@use '../util/fonts' as *;
+@use '../util/spacing' as *;
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    background-color: $navy;
+
+    h2 {
+        @include paragraph-large;
+        color: $white;
+        margin: $spacing-l 0;
+        max-width: 50%;
+        text-align: center;
+    }
+}
