@@ -9,9 +9,10 @@
 </div>
 
 <div class="slogan">
-  <h2>{{ page.slogan }}</h2>
+  <div class="slogan__text-container">
+    <h2>{{ page.slogan }}</h2>
+  </div>
+  {% call colourChartDivider() %}{% endcall %}
 </div>
-
-{% call colourChartDivider() %}{% endcall %}
 
 {% endblock %}

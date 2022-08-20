@@ -16,7 +16,8 @@
 @mixin paragraph-large {
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: px-to-rem(28);
+    line-height: px-to-rem(42);
 }
 
 @mixin paragraph {
