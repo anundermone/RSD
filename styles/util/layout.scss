@@ -1,0 +1,9 @@
+@mixin horizontally-centred {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontally-centred {
+    @include horizontally-centred;
+}
