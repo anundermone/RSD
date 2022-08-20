@@ -1,0 +1,29 @@
+@use '../util/fonts' as *;
+
+.title {
+    @include title;
+}
+
+.section-heading {
+    @include section-heading;
+}
+
+.paragraph-large {
+    @include paragraph-large;
+}
+
+.paragraph {
+    @include paragraph;
+}
+
+.menu-item {
+    @include menu-item;
+}
+
+.secondary-text {
+    @include secondary-text;
+}
+
+.company-name {
+    @include company-name;
+}

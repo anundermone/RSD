@@ -1,24 +1,18 @@
 @use '../util/colours' as *;
+@use '../util/spacing' as *;
+@use '../util/units' as *;
 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    padding-top: 32px;
-    padding-bottom: 16px;
+    background-color: $white;
+    color: $navy;
+    padding-top: $spacing-l;
+    padding-bottom: $spacing-m;
 
     &__logo {
-        height: 64px;
+        height: px-to-rem(64);
         object-fit: contain;
-    }
-
-    &__company-name {
-        font-family: 'Poppins';
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 28px;
-        text-transform: uppercase;  
-        color: $navy;
     }
 }
