@@ -40,6 +40,7 @@
     &--red {
         background-color: $red;
         color: $white;
+        border-top: $yellow solid 10px;
     }
 
     &--grey {
