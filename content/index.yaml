@@ -7,21 +7,21 @@ services:
   title: 'Our Services'
   sections:
     - items:
-      - icon: '/images/city-icon.svg'
+      - icon: 'icon-desk'
         text: 'Cat B fit-outs and commercial refurbishments'
-      - icon: '/images/apartment-building-icon.svg'
+      - icon: 'icon-apartment-building'
         text: 'Housing and retail refurbishments'
     - items:
-      - icon: '/images/paint-roller-icon.svg'
+      - icon: 'icon-paint-roller'
         text: 'High quality paint finishes - rolled, hand-painted or sprayed'
-      - icon: '/images/wallpaper-icon.svg'
+      - icon: 'icon-wallpaper'
         text: 'Bespoke wall coverings and graphics'
-      - icon: '/images/paint-brush-icon.svg'
+      - icon: 'icon-paint-brush'
         text: 'Specialist paints, such as intumescent, waterproof and mould-resistant coatings'
     - items:
-      - icon: '/images/city-icon.svg'
-        text: 'London-based, with over 30 years experience in the city's construction industry'
-      - icon: '/images/uk-icon.svg'
+      - icon: 'icon-city'
+        text: "London-based, with over 30 years experience in the city's construction industry"
+      - icon: 'icon-uk'
         text: 'Contracts across the South of England, in locations such as Bristol, Southend-on-Sea and Royal Tunbridge Wells'
 portfolio:
   title: 'Our Work'
