@@ -24,8 +24,14 @@
 
 <section class="section section--red">
   <div class="section__inner">
-    <h3>{{ page.services.title }}</h3>
-    <p>Lorem ipsum</p>
+    <h3>{{ page.portfolio.title }}</h3>
+    <div class="rotating-gallery">
+      {% for image in page.portfolio.images %}
+        <img src="{{ image.src }}" alt="{{ image.alt }}" class="rotating-gallery__item">
+      {% endfor %}
+      <button class="rotating-gallery__button--forward">Forward</button>
+      <button class="rotating-gallery__button--back">Back</button>
+    </div>
   </div>
 </section>
 

@@ -1,5 +1,5 @@
-import { example } from "./module";
+import { initialiseGalleries } from './rotating-gallery';
 
-window.onload(() => {
-    example()
-})
+window.onload = () => {
+    initialiseGalleries()
+}

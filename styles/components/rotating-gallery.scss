@@ -1,0 +1,44 @@
+.rotating-gallery {
+    position: relative;
+    width: 800px;
+    height: 400px;
+
+    img {
+        position: absolute;
+        object-fit: cover;
+    }
+
+    &__item {
+        &--position-front {
+            left: 200px;
+            top: 0;
+            width: 400px;
+            height: 400px;
+            z-index: 2;
+        }
+
+        &--position-left {
+            left: 0;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+        }
+
+        &--position-right {
+            left: 600px;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+        }
+
+        &--position-back {
+            left: 350px;
+            top: 150px;
+            width: 100px;
+            height: 100px;
+            z-index: 0;
+        }
+    }
+}

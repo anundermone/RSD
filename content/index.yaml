@@ -5,3 +5,21 @@ banner:
 slogan: 'Trusted for the perfect finish since 1991'
 services:
   title: 'Our Services'
+portfolio:
+  title: 'Our Work'
+  images:
+    - src: '/images/Koko.png'
+      alt: 'Theatre ballroom at the Koko Club'
+      caption: 'Koko Club, Camden'
+    - src: '/images/AthenePlace.jpeg'
+      alt: 'Breakout area at Athene Place'
+      caption: 'Athene Place, Holborn'
+    - src: '/images/MaidenheadOfficePark.jpeg'
+      alt: 'Mezzanine balcony at Maidenhead Office Park'
+      caption: 'Maidenhead Office Park'
+    - src: '/images/SpencerStuart4.jpeg'
+      alt: 'Waiting area in Spencer Stuart office'
+      caption: 'Spencer Stuart, London office'
+    - src: '/images/WimbledonBridgeHouse.jpeg'
+      alt: 'Reception area in Wimbledon Bridge House'
+      caption: 'Wimbledon Bridge House'
