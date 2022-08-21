@@ -24,6 +24,7 @@
           {% for item in section.items %}
             <div class="services-block__row">
               <svg><use href="#{{ item.icon }}" /></svg>
+              <p>{{ item.text }}</p>
             </div>
           {% endfor %}
         </div>
