@@ -18,7 +18,17 @@
 <section class="section section--white">
   <div class="section__inner">
     <h3>{{ page.services.title }}</h3>
-    <p>Lorem ipsum</p>
+    <div class="services-block">
+      {% for section in page.services.sections %}
+        <div class="services-block__column">
+          {% for item in section.items %}
+            <div class="services-block__row">
+              
+            </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
