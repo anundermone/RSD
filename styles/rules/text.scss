@@ -12,12 +12,12 @@
     @include paragraph-large;
 }
 
-.paragraph-medium {
-    @include paragraph-medium;
+.paragraph {
+    @include paragraph;
 }
 
-.paragraph-small {
-    @include paragraph-small;
+.spotlight-paragraph {
+    @include spotlight-paragraph;
 }
 
 .menu-item {
@@ -33,16 +33,8 @@
 }
 
 .text-block {
-    p.paragraph-large {
-
-    }
-
-    p.paragraph-medium {
-
-    }
-
-    p.paragraph-small {
-
+    p {
+        margin: 1.1em 0;
     }
 
     p:first-child {

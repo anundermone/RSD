@@ -22,14 +22,14 @@
     line-height: px-to-rem(42);
 }
 
-@mixin paragraph-medium {
+@mixin paragraph {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: px-to-rem(24);
     line-height: px-to-rem(36);
 }
 
-@mixin paragraph-small {
+@mixin spotlight-paragraph {
     font-family: 'Arimo';
     font-weight: 700;
     font-size: px-to-rem(20);
