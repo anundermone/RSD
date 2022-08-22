@@ -18,37 +18,37 @@
 @mixin paragraph-large {
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: px-to-rem(28);
-    line-height: px-to-rem(42);
+    font-size: px-to-rem(26);
+    line-height: px-to-rem(40);
 }
 
 @mixin paragraph {
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: px-to-rem(24);
-    line-height: px-to-rem(36);
+    font-size: px-to-rem(20);
+    line-height: px-to-rem(30);
 }
 
 @mixin spotlight-paragraph {
     font-family: 'Arimo';
     font-weight: 700;
-    font-size: px-to-rem(20);
-    line-height: px-to-rem(23);
+    font-size: px-to-rem(17);
+    line-height: px-to-rem(20);
 }
 
 @mixin menu-item {
     font-family: 'Arimo';
     font-weight: 700;
-    font-size: px-to-rem(20);
-    line-height: px-to-rem(23);
+    font-size: px-to-rem(17);
+    line-height: px-to-rem(17);
     text-transform: uppercase;
 }
 
 @mixin small-text {
     font-family: 'Arimo';
     font-weight: 700;
-    font-size: px-to-rem(16);
-    line-height: px-to-rem(18);
+    font-size: px-to-rem(14);
+    line-height: px-to-rem(16);
 }
 
 @mixin company-name {
