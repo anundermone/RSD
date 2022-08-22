@@ -1,13 +1,12 @@
 @use 'base/defaults';
 @use 'base/font-faces';
 
-@use 'core/fonts';
-
-@use 'components/banner';
-@use 'components/colour-chart-divider';
-@use 'components/header';
-@use 'components/menu';
-@use 'components/rotating-gallery';
-@use 'components/section';
-@use 'components/services-block';
-@use 'components/slogan';
+@use 'rules/banner';
+@use 'rules/colour-chart-divider';
+@use 'rules/header';
+@use 'rules/menu';
+@use 'rules/rotating-gallery';
+@use 'rules/section';
+@use 'rules/services-block';
+@use 'rules/slogan';
+@use 'rules/text';

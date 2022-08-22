@@ -1,0 +1,55 @@
+@use '../util/fonts' as *;
+
+.page-title {
+    @include page-title;
+}
+
+.section-heading {
+    @include section-heading;
+}
+
+.paragraph-large {
+    @include paragraph-large;
+}
+
+.paragraph-medium {
+    @include paragraph-medium;
+}
+
+.paragraph-small {
+    @include paragraph-small;
+}
+
+.menu-item {
+    @include menu-item;
+}
+
+.small-text {
+    @include small-text;
+}
+
+.company-name {
+    @include company-name;
+}
+
+.text-block {
+    p.paragraph-large {
+
+    }
+
+    p.paragraph-medium {
+
+    }
+
+    p.paragraph-small {
+
+    }
+
+    p:first-child {
+        margin-top: 0;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}

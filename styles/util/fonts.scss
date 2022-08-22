@@ -1,9 +1,10 @@
 @use 'units' as *;
 
-@mixin title {
+@mixin page-title {
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 3.5rem;
+    font-size: px-to-rem(56);
+    line-height: px-to-rem(84);
     text-transform: uppercase;
 }
 
@@ -12,8 +13,6 @@
     font-weight: 600;
     font-size: px-to-rem(40);
     line-height: px-to-rem(60);
-    margin-block-start: 1em;
-    margin-block-end: 0.5em;
 }
 
 @mixin paragraph-large {
@@ -23,27 +22,33 @@
     line-height: px-to-rem(42);
 }
 
-@mixin paragraph {
+@mixin paragraph-medium {
     font-family: 'Poppins';
     font-weight: 400;
+    font-size: px-to-rem(24);
+    line-height: px-to-rem(36);
+}
+
+@mixin paragraph-small {
+    font-family: 'Arimo';
+    font-weight: 700;
     font-size: px-to-rem(20);
-    line-height: px-to-rem(30);
+    line-height: px-to-rem(23);
 }
 
 @mixin menu-item {
     font-family: 'Arimo';
     font-weight: 700;
-    font-size: 1rem;
-    line-height: 1;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    font-size: px-to-rem(20);
+    line-height: px-to-rem(23);
     text-transform: uppercase;
 }
 
-@mixin secondary-text {
+@mixin small-text {
     font-family: 'Arimo';
     font-weight: 700;
-    font-size: 1rem;
+    font-size: px-to-rem(16);
+    line-height: px-to-rem(18);
 }
 
 @mixin company-name {
@@ -51,7 +56,5 @@
     font-weight: 600;
     font-size: px-to-rem(16);
     line-height: px-to-rem(24);
-    margin-block-start: 0;
-    margin-block-end: 0;
     text-transform: uppercase;
 }
