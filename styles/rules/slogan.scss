@@ -4,7 +4,7 @@
 
 .slogan {
     background-color: $navy;
-    padding-bottom: $spacing-s;
+    padding-bottom: $spacing-xs;
 
     &__text-container {
         display: flex;
@@ -13,7 +13,7 @@
         h2 {
             @include paragraph-large;
             color: $white;
-            margin: $spacing-l 0;
+            margin: $spacing-m 0;
             max-width: 50%;
             text-align: center;
         }
