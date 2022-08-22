@@ -1,6 +1,7 @@
 @use '../util/colours' as *;
 @use '../util/fonts' as *;
 @use '../util/screens' as *;
+@use '../util/spacing' as *;
 
 .section {
     @include mobile {
@@ -12,8 +13,8 @@
         justify-content: center;
 
         &__inner {
-            margin: 0 54px;
-            width: 1366px;
+            margin: 0 $spacing-xl;
+            width: 1280px;
         }
     }
 
