@@ -27,7 +27,7 @@ Open the site at [localhost:3000](http://localhost:3000)
 
 ### Watch mode
 
-To run the website locally in watch mode, run:
+To run the website locally in watch mode, from the repository root, run:
 ```sh
 npm run watch
 ```
