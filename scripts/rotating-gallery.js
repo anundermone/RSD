@@ -24,12 +24,11 @@ function initialiseGallery(gallery) {
 }
 
 class RotatingGallery {
-    classPrefix = 'rotating-gallery__item--position'
-
     constructor(items) {
         this.items = items
         this.focussedIndex = 0
         this.itemCount = items.length
+        this.classPrefix = 'rotating-gallery__item--position'
     }
 
     setItemClasses() {
