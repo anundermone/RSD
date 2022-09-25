@@ -23,6 +23,14 @@ services:
         text: "London-based, with over 30 years of experience in the city's construction industry"
       - icon: 'icon-uk'
         text: 'Projects completed across the South of England'
+about:
+  title: 'Who we are'
+  description:
+    text: 'This is where we will put a concise about us such as brief business details. Probably this section would span 100-200 words, potentially even short bullet points.'
+  image:
+    - src: ''
+      alt: ''
+      caption: ''
 portfolio:
   title: 'Our Work'
   images:

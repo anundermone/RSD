@@ -1,0 +1,30 @@
+@use '../util/fonts' as *;
+
+.description-block {
+    display: flex;
+    gap: 60px;
+    padding-bottom: 60px;
+
+    &__column {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        flex-basis: 0;
+        flex-grow: 1;
+
+        p {
+            @include paragraph;
+        }
+    }
+
+    &__image {
+        display: flex;
+        gap: 30px;
+
+        img {
+            position: absolute;
+            object-fit: cover;
+        }
+    }
+
+}    
