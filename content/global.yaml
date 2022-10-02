@@ -20,3 +20,13 @@ menu:
   - page: 'Contact Us'
     href: '#contact'
     # href: '/contact.html'
+
+contact:
+  email: 'dave@restyledecorators.com'
+  telephone: '01920 871 960'
+  address: |
+    Unit 100 Maltings Business Park
+    Roydon Road
+    Stanstead Abbotts
+    Herts
+    SG12 8UU
