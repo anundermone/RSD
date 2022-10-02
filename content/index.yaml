@@ -26,7 +26,9 @@ services:
 about:
   title: 'Who we are'
   description:
-    text: 'This is where we will put a concise about us such as brief business details. Probably this section would span 100-200 words, potentially even short bullet points.'
+    paragraphs:
+      - >
+        This is where we will put a concise about us such as brief business details. Probably this section would span 100-200 words, potentially even short bullet points.
   image:
     - src: ''
       alt: ''
