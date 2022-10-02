@@ -35,17 +35,17 @@
   {% block body %}{% endblock %}
   {% include "./icons.njk" %}
   <address class="contact">
-    <div class="contact__email-and-phone">
-      <p>
+    <div>
+      <p class="contact__email">
         Email:
-        <a href="mailto:{{ contact.email }}">
+        <a class="contact__email-link" href="mailto:{{ contact.email }}">
           {{ contact.email }}
         </a>
       </p>
       <p>Telephone: {{ contact.telephone }}</p>
     </div>
     <div class="contact__address">
-      <p>{{ contact.address }}</p>
+      <p>{{ contact.address | nl2br | safe }}</p>
     </div>
   </address>
 </body>

@@ -1,0 +1,26 @@
+@use '../util/colours' as *;
+@use '../util/fonts' as *;
+@use '../util/spacing' as *;
+
+.contact {
+    @include small-text;
+    background-color: $red;
+    color: $white;
+    border-top: $navy solid 5px;
+    display: flex;
+    align-items: center;
+    padding: $spacing-l 60px;
+
+    &__email {
+        margin-bottom: 1em;
+    }
+
+    &__email-link {
+        color: $white;
+    }
+
+    &__address {
+        flex-grow: 1;
+        text-align: right;
+    }
+}
