@@ -36,12 +36,8 @@
 <section id="about" class="section section--red">
   <div class="section__inner">
     <h3>{{ page.about.title }}</h3>
-    <div class="description-block">
-      <div class="description-block__column">
-        <p>{{ page.about.description.text }}</p>
-      </div>
-      <div class="description-block__image">
-      </div>
+    <div class="text-block">
+      <p>{{ page.about.description.text }}</p>
     </div>
   <div>
 </section>
@@ -55,6 +51,22 @@
       {% endfor %}
       <button class="rotating-gallery__button--forward">Forward</button>
       <button class="rotating-gallery__button--back">Back</button>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="section__inner">
+    <h3>{{ page.clients.title }}</h3>
+    <div class="text-block">
+      <p>
+        {{ page.clients.preamble }}
+      </p>
+      <ul class="bullet-list paragraph">
+        {% for company in page.clients.list %}
+          <li>{{ company }}</li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </section>

@@ -49,3 +49,19 @@ portfolio:
     - src: '/images/WimbledonBridgeHouse.jpeg'
       alt: 'Reception area in Wimbledon Bridge House'
       caption: 'Wimbledon Bridge House'
+clients:
+  title: 'Our Clients'
+  preamble: >
+    We are proud to deliver projects for the leading contractors in London, including:
+  list:
+    - Overbury
+    - BW
+    - Alco Contracts
+    - Mid Group
+    - Structuretone
+    - Make One Group
+    - ISG
+    - Willmott Dixon
+    - Artemis Interiors
+    - McLaren Construction
+    - Red Construction
