@@ -1,7 +1,5 @@
 title: Re-Style Decorators
-banner:
-  src: '/images/homepage-banner.jpeg'
-  alt: 'Spencer Stuart office fit-out'
+banner: '/images/homepage-banner.jpeg'
 slogan: 'Trusted for the perfect finish since 1991'
 services:
   title: 'Our Services'
@@ -46,21 +44,24 @@ about:
 portfolio:
   title: 'Our Work'
   images:
-    - src: '/images/Koko.png'
+    - src: '/images/Koko.jpeg'
       alt: 'Theatre ballroom at the Koko Club'
       caption: 'Koko Club, Camden'
-    - src: '/images/AthenePlace.jpeg'
-      alt: 'Breakout area at Athene Place'
-      caption: 'Athene Place, Holborn'
+    - src: '/images/ChicagoBooth.jpeg'
+      alt: 'Reception area at University of Chicago Booth'
+      caption: 'University of Chicago Booth, London Campus'
     - src: '/images/MaidenheadOfficePark.jpeg'
       alt: 'Mezzanine balcony at Maidenhead Office Park'
       caption: 'Maidenhead Office Park'
-    - src: '/images/SpencerStuart4.jpeg'
+    - src: '/images/SpencerStuart.jpeg'
       alt: 'Waiting area in Spencer Stuart office'
-      caption: 'Spencer Stuart, London office'
-    - src: '/images/WimbledonBridgeHouse.jpeg'
-      alt: 'Reception area in Wimbledon Bridge House'
-      caption: 'Wimbledon Bridge House'
+      caption: 'Spencer Stuart, Connaught Place'
+    - src: '/images/EnglishNationalBallet.jpeg'
+      alt: 'Dorfman Foyer at the English National Ballet'
+      caption: 'English National Ballet'
+    - src: '/images/KingsleyNapley.jpeg'
+      alt: 'Cafeteria at Kingsley Napley'
+      caption: 'Kingsley Napley, Bonhill St'
 clients:
   title: 'Our Clients'
   preamble: >
