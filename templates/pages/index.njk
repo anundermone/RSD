@@ -48,15 +48,17 @@
   <div class="section__inner">
     <h3>{{ page.portfolio.title }}</h3>
     <div class="rotating-gallery">
-      {% for image in page.portfolio.images %}
-        <img src="{{ image.src }}" alt="{{ image.alt }}" class="rotating-gallery__item">
-      {% endfor %}
-      <button class="rotating-gallery__button--forward">
-        <svg><use href="#icon-arrow-left" /></svg>
-      <button>
-      <button class="rotating-gallery__button--forward">
-        <svg><use href="#icon-arrow-right" /></svg>
-      <button>
+      <div class="rotating-gallery__grid">
+        {% for image in page.portfolio.images %}
+          <img src="{{ image.src }}" alt="{{ image.alt }}" class="rotating-gallery__item">
+        {% endfor %}
+        <button class="rotating-gallery__button--forward" aria-hidden="true">
+          <svg><use href="#icon-arrow-left" /></svg>
+        <button>
+        <button class="rotating-gallery__button--back" aria-hidden="true">
+          <svg><use href="#icon-arrow-right" /></svg>
+        <button>
+      </div>
     </div>
   </div>
 </section>
