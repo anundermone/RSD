@@ -8,8 +8,19 @@
     img, svg {
         display: block;
         object-fit: cover;
-        height: calc(100% - 2em);
+        height: 100%;
         width: 100%;
+    }
+
+    figcaption {
+        @include small-text;
+        display: none;
+        background-color: $navy;
+        color: $white;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 2em;
     }
 
     &__grid {
@@ -55,6 +66,14 @@
             grid-row-end: 9;
             z-index: 2;
             opacity: 1;
+
+            figcaption {
+                display: flex;
+            }
+
+            img {
+                height: calc(100% - 2em);
+            }
         }
 
         &--position-right {
@@ -76,16 +95,5 @@
             z-index: 0;
             opacity: 0;
         }
-    }
-
-    figcaption {
-        @include small-text;
-        background-color: $navy;
-        color: $white;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 2em;
     }
 }
