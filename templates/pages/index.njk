@@ -50,12 +50,18 @@
     <div class="rotating-gallery">
       <div class="rotating-gallery__grid">
         {% for image in page.portfolio.images %}
-          <img src="{{ image.src }}" alt="{{ image.alt }}" class="rotating-gallery__item">
+          <figure class="rotating-gallery__item">
+            <img src="{{ image.src }}" alt="{{ image.alt }}">
+            <figcaption>
+              <span>{{ image.caption }}</span>
+            </figcaption>
+          </figure>
+          
         {% endfor %}
-        <button class="rotating-gallery__button--forward" aria-hidden="true">
+        <button class="rotating-gallery__button--back" aria-hidden="true">
           <svg><use href="#icon-arrow-left" /></svg>
         <button>
-        <button class="rotating-gallery__button--back" aria-hidden="true">
+        <button class="rotating-gallery__button--forward" aria-hidden="true">
           <svg><use href="#icon-arrow-right" /></svg>
         <button>
       </div>
