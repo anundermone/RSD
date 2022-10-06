@@ -51,8 +51,12 @@
       {% for image in page.portfolio.images %}
         <img src="{{ image.src }}" alt="{{ image.alt }}" class="rotating-gallery__item">
       {% endfor %}
-      <button class="rotating-gallery__button--forward">Forward</button>
-      <button class="rotating-gallery__button--back">Back</button>
+      <button class="rotating-gallery__button--forward">
+        <svg><use href="#icon-arrow-left" /></svg>
+      <button>
+      <button class="rotating-gallery__button--forward">
+        <svg><use href="#icon-arrow-right" /></svg>
+      <button>
     </div>
   </div>
 </section>
