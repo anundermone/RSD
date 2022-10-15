@@ -3,6 +3,9 @@ set -eu
 
 echo "$SSH_KEY" > key
 chmod 600 key
+wc -l key
+
+exit 0
 
 echo 'Copying build files to server...'
 
@@ -11,8 +14,6 @@ scp \
     -i key \
     -o StrictHostKeyChecking=no \
     -o UserKnownHostsFile=/dev/null \
-    -o GSSAPIAuthentication=no \
-    -o PasswordAuthentication=no \
     -v \
     -r \
     build/. \
