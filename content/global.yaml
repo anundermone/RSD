@@ -6,7 +6,7 @@ meta:
   siteDescription: ''
   siteIcon: ''
 
-headerLogo: '/images/rsd-logo.png'
+headerLogo: '/images/RSD-logo.png'
 
 menu:
   - page: 'Home'
