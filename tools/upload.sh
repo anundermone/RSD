@@ -2,10 +2,8 @@
 set -eu
 
 echo "$SSH_KEY" > key
+echo "$SSH_PUBLIC_KEY" > key.pub
 chmod 600 key
-wc -l key
-
-exit 0
 
 echo 'Copying build files to server...'
 
