@@ -5,7 +5,9 @@
 
 .section {
     @include mobile {
-
+        &__inner {
+            margin: 0 10px;
+        }
     }
 
     @include desktop {

@@ -1,5 +1,6 @@
 @use '../util/colours' as *;
 @use '../util/fonts' as *;
+@use '../util/screens' as *;
 @use '../util/spacing' as *;
 
 .slogan {
@@ -14,8 +15,15 @@
             @include paragraph-large;
             color: $white;
             margin: $spacing-m 0;
-            max-width: 50%;
             text-align: center;
+
+            @include desktop {
+                max-width: 50%;
+            }
+
+            @include mobile {
+                max-width: 80%;
+            }
         }
     }
 }
