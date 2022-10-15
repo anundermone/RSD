@@ -3,12 +3,10 @@ set -eu
 
 # Set up ssh...
 echo "$SSH_KEY" > key
-echo "$SSH_PUBLIC_KEY" > key.pub
 chmod 600 key
 
 # Set build folder permissions
-chmod -R 644 build
-chmod -R +X build
+chmod -R a=rX,u+w build
 
 # Copy files
 ssh_command="ssh -v -p $SSH_PORT -i key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
