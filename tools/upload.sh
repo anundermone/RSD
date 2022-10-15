@@ -11,6 +11,8 @@ scp \
     -i key \
     -o StrictHostKeyChecking=no \
     -o UserKnownHostsFile=/dev/null \
+    -o GSSAPIAuthentication=no \
+    -o PasswordAuthentication=no \
     -v \
     -r \
     build/. \
