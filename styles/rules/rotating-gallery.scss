@@ -1,5 +1,6 @@
 @use '../util/colours' as *;
 @use '../util/fonts' as *;
+@use '../util/screens' as *;
 
 .rotating-gallery {
     margin-top: 40px;
@@ -23,77 +24,123 @@
         height: 2em;
     }
 
-    &__grid {
-        display: grid;
-        height: 400px;
-        grid-template-columns: repeat(24, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-    }
-
-    &__button--back {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-row-end: 6;
-    }
-
-    &__button--forward {
-        grid-column-start: 23;
-        grid-column-end: 25;
-        grid-row-start: 4;
-        grid-row-end: 6;
-    }
-
-    &__item {
-        display: none;
-        height: 100%;
-
-        &--position-left {
-            display: block;
-            grid-column-start: 3;
-            grid-column-end: 9;
-            grid-row-start: 3;
-            grid-row-end: 7;
-            z-index: 1;
-            opacity: 0.3;
+    @include desktop {
+        &__grid {
+            display: grid;
+            height: 400px;
+            grid-template-columns: repeat(24, 1fr);
+            grid-template-rows: repeat(8, 1fr);
         }
 
-        &--position-front {
-            display: block;
-            grid-column-start: 7;
-            grid-column-end: 19;
-            grid-row-start: 1;
-            grid-row-end: 9;
-            z-index: 2;
-            opacity: 1;
-
-            figcaption {
-                display: flex;
-            }
-
-            img {
-                height: calc(100% - 2em);
-            }
-        }
-
-        &--position-right {
-            display: block;
-            grid-column-start: 17;
-            grid-column-end: 23;
-            grid-row-start: 3;
-            grid-row-end: 7;
-            z-index: 1;
-            opacity: 0.3;
-        }
-
-        &--position-back {
-            display: block;
-            grid-column-start: 10;
-            grid-column-end: 13;
+        &__button--back {
+            grid-column-start: 1;
+            grid-column-end: 3;
             grid-row-start: 4;
             grid-row-end: 6;
-            z-index: 0;
-            opacity: 0;
+        }
+
+        &__button--forward {
+            grid-column-start: 23;
+            grid-column-end: 25;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+
+        &__item {
+            display: none;
+            height: 100%;
+
+            &--position-left {
+                display: block;
+                grid-column-start: 3;
+                grid-column-end: 9;
+                grid-row-start: 3;
+                grid-row-end: 7;
+                z-index: 1;
+                opacity: 0.3;
+            }
+
+            &--position-front {
+                display: block;
+                grid-column-start: 7;
+                grid-column-end: 19;
+                grid-row-start: 1;
+                grid-row-end: 9;
+                z-index: 2;
+                opacity: 1;
+
+                figcaption {
+                    display: flex;
+                }
+
+                img {
+                    height: calc(100% - 2em);
+                }
+            }
+
+            &--position-right {
+                display: block;
+                grid-column-start: 17;
+                grid-column-end: 23;
+                grid-row-start: 3;
+                grid-row-end: 7;
+                z-index: 1;
+                opacity: 0.3;
+            }
+
+            &--position-back {
+                display: block;
+                grid-column-start: 10;
+                grid-column-end: 13;
+                grid-row-start: 4;
+                grid-row-end: 6;
+                z-index: 0;
+                opacity: 0;
+            }
+        }
+    }
+
+    @include mobile {
+        &__grid {
+            display: grid;
+            height: 250px;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+        }
+
+        &__button--back {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+
+        &__button--forward {
+            grid-column-start: 8;
+            grid-column-end: 9;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+
+        &__item {
+            display: none;
+            height: 100%;
+
+            &--position-front {
+                display: block;
+                grid-column-start: 2;
+                grid-column-end: 8;
+                grid-row-start: 1;
+                grid-row-end: 9;
+    
+                figcaption {
+                    display: flex;
+                }
+    
+                img {
+                    height: calc(100% - 2em);
+                }
+            }
         }
     }
 }
