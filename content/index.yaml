@@ -6,9 +6,9 @@ services:
   sections:
     - items:
       - icon: 'icon-desk'
-        text: 'Cat B commercial fit-outs and office refurbishments'
+        text: 'Cat A & B fit-outs and refurbishments'
       - icon: 'icon-apartment-building'
-        text: 'Housing and retail refurbishments'
+        text: 'Specialists in commercial projects'
     - items:
       - icon: 'icon-paint-roller'
         text: 'Top-quality paint finishes, whether rolled, hand-painted or sprayed'
@@ -31,7 +31,7 @@ about:
       - >
         We principally carry out commercial decoration works, such as general painting, hanging
         wallcoverings and spray work in the office fit-out market of London and the Home Counties.
-        We're proud our flexibility, delivering excellence on projects of all sizes from £1m down to £1k,
+        We're proud our flexibility, delivering excellence on projects of all sizes from £2m down to £2k,
         and completing works on retail and housing projects on special request.
       - >
         Staying in budget and on time is non-negotiable for Dave and his team. Our ethos resolves around
@@ -47,6 +47,9 @@ portfolio:
     - src: '/images/Koko.jpeg'
       alt: 'Theatre ballroom at the Koko Club'
       caption: 'Koko Club, Camden'
+    - src: '/images/one-hundred-shoreditch.jpeg'
+      alt: 'Hotel bar at One Hundred Shoreditch'
+      caption: 'One Hundred Shoreditch'
     - src: '/images/ChicagoBooth.jpeg'
       alt: 'Reception area at University of Chicago Booth'
       caption: 'University of Chicago Booth, London Campus'
