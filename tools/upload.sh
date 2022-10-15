@@ -1,7 +1,7 @@
 #/bin/sh
 set -eu
 
-# Set up ssh...
+# Set up ssh
 echo "$SSH_KEY" > key
 chmod 600 key
 
