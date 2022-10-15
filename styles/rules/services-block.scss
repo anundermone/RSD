@@ -1,8 +1,17 @@
 @use '../util/fonts' as *;
+@use '../util/screens' as *;
 
 .services-block {
     display: flex;
     padding-bottom: 60px;
+
+    @include desktop {
+        flex-direction: row;
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
 
     &__column {
         display: flex;
@@ -10,6 +19,10 @@
         flex-direction: column;
         flex-basis: 0;
         flex-grow: 1;
+
+        @include mobile {
+            margin-right: 0;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -20,8 +33,10 @@
         display: flex;
         margin-bottom: 30px;
 
-        &:last-child {
-            margin-bottom: 0;
+        @include desktop {
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
         svg {
