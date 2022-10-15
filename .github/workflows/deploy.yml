@@ -19,6 +19,7 @@ jobs:
         run: npm run build
       - name: Upload
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: npx netlify deploy --dir=build --prod
+          SSH_ADDRESS: ${{ secrets.SSH_ADDRESS }}
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+        run: tools/upload.sh
