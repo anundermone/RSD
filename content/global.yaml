@@ -4,7 +4,7 @@ config:
 
 meta:
   siteDescription: ''
-  siteIcon: ''
+  siteIcon: '/images/favicon.png'
 
 headerLogo: '/images/RSD-logo.png'
 
