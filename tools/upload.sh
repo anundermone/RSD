@@ -2,6 +2,7 @@
 set -eu
 
 echo "$SSH_KEY" > key
+chmod 600 key
 
 echo 'Copying build files to server...'
 
