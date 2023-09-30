@@ -9,6 +9,8 @@
     }
 
     &__image {
+        object-fit: contain;
+
         @include desktop {
             width: 50%;
         }
