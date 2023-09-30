@@ -85,4 +85,16 @@
   </div>
 </section>
 
+<section id="work" class="section section--grey">
+  <div class="section__inner">
+    <h3>{{ page.award.title }}</h3>
+    <div class="text-block">
+      <p>{{ page.award.text | safe }}</p>
+      <div class="section-image__container">
+        <img class="section-image__image" src="{{ page.award.image.src }}" alt="{{ page.award.image.alt }}">
+      </div>
+    </div>
+  </div>
+</section>
+
 {% endblock %}
