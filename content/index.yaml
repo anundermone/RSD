@@ -52,7 +52,7 @@ portfolio:
       caption: 'One Hundred Shoreditch'
     - src: '/images/ChicagoBooth.jpeg'
       alt: 'Reception area at University of Chicago Booth'
-      caption: 'University of Chicago Booth, London Campus'
+      caption: 'University of Chicago Booth'
     - src: '/images/MaidenheadOfficePark.jpeg'
       alt: 'Mezzanine balcony at Maidenhead Office Park'
       caption: 'Maidenhead Office Park'

@@ -11,6 +11,7 @@
 
     &__image {
         object-fit: contain;
+        position: relative;
 
         @include desktop {
             width: 50%;
